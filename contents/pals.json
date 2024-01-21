@@ -1,0 +1,11 @@
+{
+    "Lamball": {
+      "image": "Lamball.png",
+      "no": "#1",
+      "element": "Neutral",
+      "food": "1",
+      "partner_skill": "Fluffy Shield",
+      "work_suitability": "Handiwork 1, Transporting 1, Farming 1",
+      "wiki_page": "https://palworld.fandom.com/wiki/Lamball"
+    }
+}
