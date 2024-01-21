@@ -25,6 +25,16 @@ module.exports = {
     async execute(interaction) {
         const userSelection = interaction.options.getString("name");
 
+        if (!pals[userSelection]) {
+            const notFoundEmbed = new EmbedBuilder()
+                .setColor("#FF0000")
+                .setTitle("Invalid Pal Name")
+                .setDescription(`The Pal "${userSelection}" does not exist. Please use **/pals** to find a list of available Pals.`);
+
+            await interaction.reply({ embeds: [notFoundEmbed] });
+            return;
+        }
+
         const selectedPal = pals[userSelection];
 
         const embed = new EmbedBuilder()
@@ -33,27 +43,24 @@ module.exports = {
             .setFields(
                 { name: "No:", value: selectedPal.no, inline: false },
                 { name: "Element(s):", value: selectedPal.element, inline: false },
-                { name: "Food Consumption Level:", value: selectedPal.food, inline: false },
                 { name: "Partner Skill:", value: selectedPal.partner_skill, inline: false },
                 { name: "Work Suitabilities:", value: selectedPal.work_suitability, inline: false },
                 { name: "Wiki Page:", value: selectedPal.wiki_page, inline: false }
             );
 
         if (selectedPal.image !== "") {
-
             const attachment = new AttachmentBuilder()
                 .setFile(`./assets/pals/${selectedPal.image}`)
-                .setName(`image.png`)
+                .setName(`image.png`);
 
             const embed2 = new EmbedBuilder()
                 .setColor("#00C9FF")
                 .setTitle(`${userSelection}`)
-                .setImage("attachment://image.png")
+                .setImage("attachment://image.png");
 
             await interaction.reply({ files: [attachment], embeds: [embed2, embed] });
         } else {
             await interaction.reply({ embeds: [embed] });
         }
-
     },
 };
