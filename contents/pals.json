@@ -1,18 +1,113 @@
 {
-    "Lamball": {
-      "image": "Lamball.png",
-      "no": "#1",
-      "element": "Neutral",
-      "partner_skill": "Fluffy Shield: *When activated, equips to the player and becomes a shield.\nSometimes drops Wool when assigned to Ranch.*",
-      "work_suitability": "Handiwork 1, Transporting 1, Farming 1",
-      "wiki_page": "https://palworld.fandom.com/wiki/Lamball"
-    },
-    "Cattiva": {
-      "image": "Cattiva.png",
-      "no": "#2",
-      "element": "Neutral",
-      "partner_skill": "Cat Helper: *While in team, Cattiva helps carry supplies, increasing the player's max carrying capacity.*",
-      "work_suitability": "Handiwork 1, Transporting 1, Gathering 1, Mining 1",
-      "wiki_page": "https://palworld.fandom.com/wiki/Cattiva"
-    }
+  "Lamball": {
+    "image": "Lamball.png",
+    "no": "#1",
+    "element": "Neutral",
+    "partner_skill": "Fluffy Shield: *When activated, equips to the player and becomes a shield.\nSometimes drops Wool when assigned to Ranch.*",
+    "work_suitability": [
+      {"category": "Handiwork", "level": 1},
+      {"category": "Transporting", "level": 1},
+      {"category": "Farming", "level": 1}
+    ]
+  },
+  "Cattiva": {
+    "image": "Cattiva.png",
+    "no": "#2",
+    "element": "Neutral",
+    "partner_skill": "Cat Helper: *While in team, Cattiva helps carry supplies, increasing the player's max carrying capacity.*",
+    "work_suitability": [
+      {"category": "Handiwork", "level": 1},
+      {"category": "Transporting", "level": 1},
+      {"category": "Gathering", "level": 1},
+      {"category": "Mining", "level": 1}
+    ]
+  },
+  "Chikipi": {
+    "image": "Chikipi.png",
+    "no": "#3",
+    "element": "Neutral",
+    "partner_skill": "Egg Layer: *Sometimes lays eggs when assigned to Ranch.*",
+    "work_suitability": [
+      {"category": "Gathering", "level": 1},
+      {"category": "Farming", "level": 1}
+    ]
+  },
+  "Lifmunk": {
+    "image": "Lifmunk.png",
+    "no": "#4",
+    "element": "Grass",
+    "partner_skill": "Lifmunk Recoil: *When activated, leaps onto player's head and uses a submachine gun to follow up player attacks.*",
+    "work_suitability": [
+      {"category": "Planting", "level": 1},
+      {"category": "Handiwork", "level": 1},
+      {"category": "Lumbering", "level": 1},
+      {"category": "Medicine Production", "level": 1},
+      {"category": "Gathering", "level": 1}
+    ]
+  },
+  "Foxparks": {
+    "image": "Foxparks.png",
+    "no": "#5",
+    "element": "Fire",
+    "partner_skill": "Huggy Fire: *When activated, equips to the player and transforms into a flamethrower.*",
+    "work_suitability": [
+      {"category": "Kindling", "level": 1}
+    ]
+  },
+  "Fuack": {
+    "image": "Fuack.png",
+    "no": "#6",
+    "element": "Water",
+    "partner_skill": "Surfing Slam: *When activated, Fuack body surfs towards an enemy and slams into them.*",
+    "work_suitability": [
+      {"category": "Handiwork", "level": 1},
+      {"category": "Transporting", "level": 1},
+      {"category": "Watering", "level": 1}
+    ]
+  },
+  "Sparkit": {
+    "image": "Sparkit.png",
+    "no": "#7",
+    "element": "Electric",
+    "partner_skill": "Static Electricity: *While in team, increases attack power of Electric Pals.*",
+    "work_suitability": [
+      {"category": "Handiwork", "level": 1},
+      {"category": "Transporting", "level": 1},
+      {"category": "Generating Electricity", "level": 1}
+    ]
+  },
+  "Tanzee": {
+    "image": "Tanzee.png",
+    "no": "#8",
+    "element": "Grass",
+    "partner_skill": "Cheery Rifle: *When activated, Tanzee will mercilessly fire an assault rifle at nearby enemies.*",
+    "work_suitability": [
+      {"category": "Planting", "level": 1},
+      {"category": "Handiwork", "level": 1},
+      {"category": "Lumbering", "level": 1},
+      {"category": "Transporting", "level": 1},
+      {"category": "Gathering", "level": 1}
+    ]
+  },
+  "Rooby": {
+    "image": "Rooby.png",
+    "no": "#9",
+    "element": "Fire",
+    "partner_skill": "Tiny Spark: *While in team, increases attack power of Fire Pals.*",
+    "work_suitability": [
+      {"category": "Kindling", "level": 1}
+    ]
+  },
+  "Pengullet": {
+    "image": "Pengullet.png",
+    "no": "#10",
+    "element": "Water/Ice",
+    "partner_skill": "Pengullet Cannon: *When activated, the player equips a Rocket Launcher and fires Pengullet as ammunition. Pengullet explodes on contact and is incapacitated.*",
+    "work_suitability": [
+      {"category": "Handiwork", "level": 1},
+      {"category": "Transporting", "level": 1},
+      {"category": "Watering", "level": 1},
+      {"category": "Cooling", "level": 1}
+    ]
+  }
 }

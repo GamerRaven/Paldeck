@@ -37,6 +37,10 @@ module.exports = {
 
         const selectedPal = pals[userSelection];
 
+        const workSuitabilities = selectedPal.work_suitability
+            .map(suitability => `${suitability.category} ${suitability.level}`)
+            .join(', ');
+
         const embed = new EmbedBuilder()
             .setColor("#00C9FF")
             .setTitle(userSelection)
@@ -44,8 +48,7 @@ module.exports = {
                 { name: "No:", value: selectedPal.no, inline: false },
                 { name: "Element(s):", value: selectedPal.element, inline: false },
                 { name: "Partner Skill:", value: selectedPal.partner_skill, inline: false },
-                { name: "Work Suitabilities:", value: selectedPal.work_suitability, inline: false },
-                { name: "Wiki Page:", value: selectedPal.wiki_page, inline: false }
+                { name: "Work Suitabilities:", value: workSuitabilities, inline: false }
             );
 
         if (selectedPal.image !== "") {
